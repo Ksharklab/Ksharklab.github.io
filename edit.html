@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>编辑我的资料</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<header><h1>编辑我的资料</h1><nav><a href="index.html">返回地图</a></nav></header>
+<main class="page"><section class="panel"><p class="note">专属链接相当于钥匙，请勿转发。网站只公开到地级市，不收集精确地址。</p>
+<div id="unlock"><label>个人编辑码</label><input id="pin" inputmode="numeric" maxlength="8"><button id="verify">验证</button></div>
+<form id="form" hidden><label>公开昵称</label><input id="name" required maxlength="30"><label>学校</label><input id="school" required maxlength="80">
+<label>省份</label><select id="province" required></select><label>地级市/自治州/盟</label><select id="city" required></select>
+<label>欢迎语</label><textarea id="message" maxlength="100"></textarea><label class="check"><input id="visible" type="checkbox">同意在公开地图显示</label>
+<button>保存资料</button></form><p id="status"></p></section></main><script type="module" src="assets/edit.js"></script></body></html>

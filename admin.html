@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>管理员后台</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<header><h1>管理员后台</h1><nav><a href="index.html">返回地图</a></nav></header><main class="page"><section class="panel wide">
+<div id="login"><label>管理员密码</label><input id="password" type="password"><button id="loginBtn">进入后台</button></div>
+<div id="dashboard" hidden><h2>新增同学名额</h2><form id="createForm"><input id="newName" placeholder="初始昵称，例如：同学01" required><button>生成专属编辑链接</button></form>
+<textarea id="credentials" rows="5" readonly placeholder="生成的链接和编辑码会显示在这里"></textarea>
+<h2>名单管理</h2><button id="refresh">刷新</button><button id="exportBtn">导出 JSON</button><div class="table"><table><thead><tr><th>昵称</th><th>学校</th><th>地区</th><th>公开</th><th>审核</th><th>操作</th></tr></thead><tbody id="tbody"></tbody></table></div></div>
+<p id="status"></p></section></main><script type="module" src="assets/admin.js"></script></body></html>
